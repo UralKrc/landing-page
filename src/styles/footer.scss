@@ -1,0 +1,85 @@
+/* Footer */
+.footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 3rem;
+  font-size: 0.825rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  @media (min-width: 1120px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-menu {
+  line-height: 1.5rem;
+  flex: 1 0 120px;
+
+  @media (min-width: 1120px) {
+    flex: none;
+    margin-right: 5rem;
+  }
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-list-title {
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.footer-list-item {
+  font-size: 0.825rem;
+}
+
+.email-form {
+  @media (min-width: 1200px) {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.email-text {
+  color: #7FC4FD;
+  font-size: 0.825rem;
+
+  @media (min-width: 1200px) {
+    max-width: 65%;
+  }
+}
+
+.email-input {
+  border: 1px solid #7FC4FD;
+  border-radius: 4px;
+  height: 40px;
+  padding: 0.825rem 1.125rem;
+  margin-top: 0.825rem;
+  color: #FFFFFF;
+  width: 100%;
+  max-width: 200px;
+}
+
+.email-button {
+  color: #7FC4FD;
+  font-weight: 600;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  height: 40px;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+
+  &:hover {
+    background-color: #7FC4FD;
+    color: #FFFFFF;
+  }
+}

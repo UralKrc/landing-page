@@ -1,0 +1,163 @@
+
+.grid-container {
+  width: 100%;
+
+  @media (min-width: 468px) {
+    display: flex;
+    gap: 1.5rem;
+    flex: 2;
+  }
+
+  @media (min-width: 1120px) {
+    flex: auto;
+  }
+
+  @media (min-width: 1400px) {
+    &.wheels {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.grid-box {
+  position: relative;
+  flex: 1 1 0%;
+  margin-bottom: 1rem;
+
+
+  @media (min-width: 1120px) {
+    margin: 0 auto 1rem;
+    max-width: 233px;
+  }
+
+  &.speed::after {
+    display: none;
+    content: '';
+    position: absolute;
+    background: #b9bed1;
+    width: 1px;
+    height: 120px;
+    right: -45px;
+    top: -5px;
+
+    @media (min-width: 1400px) {
+      display: block;
+    }
+  }
+}
+
+
+.grid-box-title {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  color: #707070;
+  white-space: nowrap;
+
+  @media (min-width: 1120px) {
+    margin-bottom: 1rem;
+  }
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border: 1px solid #b9bed1;
+  background: #f0f2f7;
+  padding: .5rem;
+  color: #040C36;
+  max-height: 81px;
+
+  @media (min-width: 1120px) {
+    padding: 1rem;
+  }
+
+  &.speed {
+    .text-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+
+      .small {
+        font-size: 1rem; 
+      }
+    }
+  }
+}
+
+.calculator-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+
+  @media (min-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
+.temp {
+  .calculator-text {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.button {
+  &.disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #b9bed1;
+}
+
+.grid-box-divider {
+  position: absolute;
+  background: #b9bed1;
+  width: 1px;
+  height: 100%;
+}
+
+.grid-box {
+  &.wheels {
+    align-self: flex-end;
+  }
+}
+
+.icon-wheel {
+  width: 54px;
+  height: 54px;
+}
+
+.wheel-19,
+.wheel-21 {
+  width: 100%;
+  justify-content: center;
+
+  &.active {
+    border: 1px solid #008DFF;
+  }
+}
+
+@media (min-width: 1120px) {
+  .wheel-21 {
+    align-self: flex-end;
+  }
+}

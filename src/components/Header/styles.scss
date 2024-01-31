@@ -1,0 +1,129 @@
+.header {
+  max-height: 67vw;
+
+  @media (min-width: 1120px) {
+    height: 50vw;
+  }
+
+  &.active {
+    .navigation {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
+    .hamburger-line:nth-child(1) {
+      transform: rotate(-45deg) translate(-3px, 4px);      
+    }
+
+    .hamburger-line:nth-child(2) {
+      opacity: 0;
+    } 
+
+    .hamburger-line:nth-child(3) {
+      transform: rotate(45deg) translate(-3px, -4px);
+    }
+  }
+}
+
+.logo {
+  background-color: #000000;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.banner {
+  background-image: url('./assets/images/hero-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1rem;
+  box-sizing: border-box;
+  height: 50vw;
+
+  @media (min-width: 1120px) {
+    background-image: url('./assets/images/hero-image@2x.png');
+    height: 45vw;
+  }
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  outline: none;
+  background: #ffffff;
+  border: 1px solid #333;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+
+  @media (min-width: 678px) {
+    display: none;
+  }
+}
+
+.hamburger-line {
+  width: 18px;
+  height: 2px;
+  background-color: #040C36;;
+  margin: 3px 0;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navigation {
+  opacity: 0;
+  transform: translateX(-100%);
+  display: flex;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  align-items: center;
+  padding-left: 1.5rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  @media (min-width: 678px) {
+    transform: translateX(0);
+    opacity: 1;
+    position: static;
+    background-color: transparent;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  color: #040C36;
+  font-size: 1.25rem;
+
+  @media (min-width: 678px) {
+    max-width: 720px;
+    margin: 0 auto;
+    flex-direction: row;
+    color: #FFFFFF;
+    font-size: 0.925rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.menu-item {
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-weight: 600;
+  &:hover {
+    color: #b9bed1;
+  }
+}

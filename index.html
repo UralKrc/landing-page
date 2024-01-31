@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tesla Landing Page</title>
+    <link rel="icon" href="/src/assets/images/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/src/main.scss">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./src/assets/images/logo.svg" />
+        </div>
+        <div class="banner">
+            <button class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>    
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#section1">Model S</a></li>
+                    <li class="menu-item"><a href="#section2">Model X</a></li>
+                    <li class="menu-item"><a href="#section3">Model 3</a></li>
+                    <li class="menu-item"><a href="#section3">Roadster</a></li>
+                    <li class="menu-item"><a href="#section3">Energy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="landing-header">
+                <h2 class="landing-title">
+                    Far far away, behind the word mountains...
+                </h2>
+                <p class="landing-subtitle">
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, 
+                    in which roasted parts of sentences fly into your mouth.
+                </p>
+            </div>
+            <div class="landing-body">
+                <a href="#range-section">
+                    <figure class="icon-wrapper">
+                        <img class="arrow-icon" src="./src/assets/images/icon-chevron-down.svg" alt="Arrow">
+                    </figure>
+                </a>
+            </div>
+        </section>
+        <section class="section">
+            <h3 class="section-text">Range per Charge</h3>
+            <div id="range-section" class="car-preview">
+                <figure>
+                    <img class="car-image" 
+                        srcset="./src/assets/images/car-base.png 1x, ./src/assets/images/car-base@2x.png 2x" 
+                        src="./src/assets/images/car-base.png"
+                    >
+                </figure>
+                <figure>
+                    <img class="car-wheel left" 
+                        srcset="./src/assets/images/car-wheel.png 1x, ./src/assets/images/car-wheel@2x.png 2x" 
+                        src="./src/assets/images/car-wheel.png" 
+                        loading="lazy"
+                    >
+                </figure>
+                <figure>
+                    <img class="car-wheel right" 
+                        srcset="./src/assets/images/car-wheel.png 1x, ./src/assets/images/car-wheel@2x.png 2x" 
+                        src="./src/assets/assets/images/car-wheel.png"
+                        loading="lazy"
+                    >
+                </figure>
+            </div>
+        </section>
+        <section class="section calculator-section">
+            <div class="range-types">
+                <div class="range-type left">
+                    <figure class="image-wrapper">
+                        <img srcset="./src/assets/images/100d.png 1x, ./src/assets/images/100d@2x.png 2x" 
+                             src="./src/assets/images/100d.png"
+                             alt="Range"
+                        >
+                    </figure>
+                    <figcaption class="range">
+                        <span class="range-100D">594</span>
+                        <span class="range-km">KM</span>
+                    </figcaption>
+                </div>
+                <div class="range-type right">
+                    <figure class="image-wrapper">
+                        <img srcset="./src/assets/images/p100d.png 1x, ./src/assets/images/p100d@2x.png 2x" 
+                             src="./src/assets/images/p100d.png"
+                             alt="Range"
+                        >
+                    </figure>
+                    <figcaption class="range">
+                        <span class="range-P100D">572</span>
+                        <span class="range-km">KM</span>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="range-calculator">
+                <div class="grid-container">
+                    <div class="grid-box speed">
+                        <h5 class="grid-box-title">Speed</h5>
+                        <div class="calculator speed">
+                            <div class="text-wrapper">
+                                <p class="calculator-text">100</p>
+                                <span class="small">KMH</span>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="button increase">
+                                    <img src="./src/assets/images/icon-thin-chevron-up.svg" alt="Up" />
+                                </button>
+                                <span class="divider"></span>
+                                <button class="button decrease">
+                                    <img src="./src/assets/images/icon-thin-chevron-down.svg" alt="Down" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-box">
+                        <h5 class="grid-box-title">Outside Temperature</h5>
+                        <div class="calculator temp">
+                            <p class="calculator-text">20 <span class="small">&deg;</span></p>
+                            <div class="action-buttons">
+                                <button class="button increase">
+                                    <img src="./src/assets/images/icon-thin-chevron-up.svg" alt="Up" />
+                                </button>
+                                <span class="divider"></span>
+                                <button class="button decrease">
+                                    <img src="./src/assets/images/icon-thin-chevron-down.svg" alt="Down" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-box ac">
+                    <button class="ac-toggle">
+                        <p class="ac-text">AC OFF</p>
+                        <img src="./src/assets/images/icon-fan-gray.svg" alt="AC" />
+                    </button>
+                </div>
+                <div class="grid-container wheels">
+                    <div class="grid-box wheels">
+                        <h5 class="grid-box-title">Wheels</h5>
+                        <button class="calculator wheel-19">
+                            <img class="icon-wheel" src="./src/assets/images/icon-wheel.svg" alt="Wheel" />
+                            <span class="calculator-text">19"</span>
+                        </button>
+                    </div>
+                    <div class="grid-box wheels">             
+                        <button class="calculator wheel-21">
+                            <img class="icon-wheel" src="./src/assets/images/icon-wheel.svg" alt="Wheel" />
+                            <span class="calculator-text">21"</span>
+                        </button>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <section class="section information-section">
+            <p class="information-text">
+                The actual amount of range that you experience will vary based on your particular use conditions. 
+                Your vehicle range is also dependent on other conditions, such as vehicle configuration, battery age and condition, 
+                driving style and operating, environmental and climate conditions. See how some of these particular use conditions may affect your range 
+                in our simulation model.
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-menu contact-us">
+            <h6 class="footer-list-title">
+                Contact Us
+            </h6>
+            <p>+44 345 678 903</p>
+            <a href="#" target="_blank">adobexd@mail.com</a>
+            <a href="#">Find a Store</a>
+        </div>
+        <div class="footer-menu customer-service">
+            <h6 class="footer-list-title">
+                Customer Service
+            </h6>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <a href="#">Contact Us</a>
+                </li>
+                <li class="footer-list-item"><a href="#">Ordering & Payment</a></li>
+                <li class="footer-list-item"><a href="#">Shipping</a></li>
+                <li class="footer-list-item"><a href="#">Returns</a></li>
+                <li class="footer-list-item"><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu information">
+            <h6 class="footer-list-title">Information</h6>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="#">About this example</a></li>
+                <li class="footer-list-item"><a href="#">Work With US</a></li>
+                <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
+                <li class="footer-list-item"><a href="#">Terms & Conditions</a></li>
+                <li class="footer-list-item"><a href="#">Press Enquiries</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu email">
+            <h6 class="footer-list-title">Subscribe to us via Email</h6>
+            <p class="email-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            <form class="email-form" action="/submit-email" method="post">
+                <input class="email-input" type="email" id="email" name="email" placeholder="Email Address" />
+                <button type="submit" class="email-button">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+    <noscript>Your browser does not support JavaScript or it is disabled!</noscript>
+</body>
+</html>
